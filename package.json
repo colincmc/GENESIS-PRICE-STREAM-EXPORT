@@ -1,0 +1,19 @@
+{
+  "name": "genesis-price-stream-export",
+  "version": "1.0.0",
+  "description": "Ingestion Gate sidecar — writes price observations to columnar Parquet format. 100K+ price streams ready for RAPIDS from moment GPU arrives. Port 8794.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "@dsnp/parquetjs": "^1.8.7"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "@types/node": "^20.11.5",
+    "@types/express": "^4.17.21"
+  }
+}
